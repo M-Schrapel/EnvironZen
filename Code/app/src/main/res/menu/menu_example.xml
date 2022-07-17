@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/settings"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/settings" />
+    <item
+        android:id="@+id/sensor_logger"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="@string/sensor_logger" />
+    <item
+        android:id="@+id/bluetooth"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="Bluetooth" />
+    <item
+        android:id="@+id/navigation"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="@string/navigation" />
+    <item
+        android:id="@+id/about"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="@string/about" />
+    <item
+        android:id="@+id/volume"
+        android:icon="@drawable/ic_baseline_volume_up_24"
+        android:title="Volume"
+        app:showAsAction="ifRoom" />
+</menu>

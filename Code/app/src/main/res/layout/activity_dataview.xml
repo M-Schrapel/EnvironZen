@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dataview">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/charts"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chartAcc"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/chartAccSum"
+            app:layout_constraintEnd_toStartOf="@+id/chartGyr"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></com.github.mikephil.charting.charts.LineChart>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chartGyr"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/chartGyrSum"
+            app:layout_constraintEnd_toStartOf="@+id/chartMag"
+            app:layout_constraintStart_toEndOf="@+id/chartAcc"
+            app:layout_constraintTop_toTopOf="parent"></com.github.mikephil.charting.charts.LineChart>
+
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chartMag"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/chartMagSum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/chartGyr"
+            app:layout_constraintTop_toTopOf="parent"></com.github.mikephil.charting.charts.LineChart>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chartAccSum"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/chartGyrSum"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chartAcc"></com.github.mikephil.charting.charts.LineChart>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chartGyrSum"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/chartMagSum"
+            app:layout_constraintStart_toEndOf="@id/chartAccSum"
+            app:layout_constraintTop_toBottomOf="@+id/chartGyr"></com.github.mikephil.charting.charts.LineChart>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chartMagSum"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/chartGyrSum"
+            app:layout_constraintTop_toBottomOf="@+id/chartMag"></com.github.mikephil.charting.charts.LineChart>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/charts">
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="3dip"
+                android:text=" " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="3dip"
+                android:text="@string/acc"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="@string/gyr"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="@string/mag"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="3dip"
+                android:text="@string/vX"
+                android:textAlignment="viewEnd"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/accX"
+                android:padding="3dip"
+                android:text="@string/accX"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/gyrX"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="@string/gyrX"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/magX"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="@string/magX"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="3dip"
+                android:text="@string/vY"
+                android:textAlignment="viewEnd"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/accY"
+                android:padding="3dip"
+                android:text="@string/accY"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/gyrY"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="@string/gyrY"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/magY"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="@string/magY"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="3dip"
+                android:text="@string/vZ"
+                android:textAlignment="viewEnd"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/accZ"
+                android:padding="3dip"
+                android:text="@string/accZ"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/gyrZ"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="@string/gyrZ"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/magZ"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="@string/magZ"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="3dip"
+                android:text="@string/vF"
+                android:textAlignment="viewEnd"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fAcc"
+                android:padding="3dip"
+                android:text="@string/fAcc"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/fGyr"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="@string/fGyr"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/fMag"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="@string/fMag"
+                android:textAlignment="center" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

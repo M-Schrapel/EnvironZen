@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">EnvironZen</string>
+    <string name="fade_away">Fade away</string>
+    <string name="status">status</string>
+    <string name="dataview">Dataview</string>
+    <string name="settings">Settings</string>
+    <string name="sensor_logger">Sensor Logger</string>
+    <string name="about">About</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="about_text">This App was created by Maximilian Schrapel and Janko Happe at the HCI Group of the Leibniz University Hannover, Germany. Use at your own risk.</string>
+    <string name="inquiries">For inquiries please contact me via mail: schrapel@hci.uni-hannover.de</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+    <string name="acc">Accelerometer</string>
+    <string name="gyr">Gyroscope</string>
+    <string name="mag">Magnetometer</string>
+    <string name="accX">0</string>
+    <string name="accY">0</string>
+    <string name="accZ">0</string>
+    <string name="gyrX">0</string>
+    <string name="gyrY">0</string>
+    <string name="gyrZ">0</string>
+    <string name="magX">0</string>
+    <string name="magY">0</string>
+    <string name="magZ">0</string>
+    <string name="fAcc">0</string>
+    <string name="fGyr">0</string>
+    <string name="fMag">0</string>
+    <string name="vX">X:</string>
+    <string name="vY">Y:</string>
+    <string name="vZ">Z:</string>
+    <string name="vF">F:</string>
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+    <string name="gacc">Acc</string>
+    <string name="ggyr">Gyr</string>
+    <string name="gmag">Mag</string>
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="pocket">Disable pocket mode</string>
+    <string name="ambience_volume">Ambience volume</string>
+    <string name="step_volume">Step volume</string>
+    <string name="story_mode">Story mode</string>
+    <string name="navigation">Navigation</string>
+    <string name="delay_preference">Step sound delay</string>
+</resources>

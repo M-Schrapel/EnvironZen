@@ -20,4 +20,4 @@ Open the app and swipe to the right or left to select a desired soundscape. Now 
 
 This repository is provided by the Human-Computer Interaction Group at the University Hannover, Germany. For additional details, see our related i-com paper. 
 The app and code is licsened under MIT license. For inquiries, please contact maximilian.schrapel@hci.uni-hannover.de
-The code was mainly developed by Janko Happe during this Master's thesis.
+The code was mainly developed by Janko Happe during his Master's thesis.
